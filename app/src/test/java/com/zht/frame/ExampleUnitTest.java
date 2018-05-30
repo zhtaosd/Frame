@@ -1,5 +1,9 @@
 package com.zht.frame;
 
+
+import com.zht.frame.simplefctory.Api;
+import com.zht.frame.simplefctory.SimpleFactory;
+
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -13,5 +17,10 @@ public class ExampleUnitTest {
     @Test
     public void addition_isCorrect() {
         assertEquals(4, 2 + 2);
+    }
+    @Test
+    public void testSimpleFactory() {
+        Api  api = SimpleFactory.creat(1);
+        api.dobusiness();
     }
 }
