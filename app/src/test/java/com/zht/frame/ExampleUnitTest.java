@@ -2,6 +2,8 @@ package com.zht.frame;
 
 
 import com.zht.frame.simplefctory.Api;
+import com.zht.frame.simplefctory.ImpA;
+import com.zht.frame.simplefctory.ImpB;
 import com.zht.frame.simplefctory.SimpleFactory;
 
 import org.junit.Test;
@@ -22,5 +24,9 @@ public class ExampleUnitTest {
     public void testSimpleFactory() {
         Api  api = SimpleFactory.creat(1);
         api.dobusiness();
+
+        api = SimpleFactory.creatProduct(ImpB.class);
+        api.dobusiness();
     }
+
 }
