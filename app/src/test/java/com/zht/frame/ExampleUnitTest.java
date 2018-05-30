@@ -1,8 +1,9 @@
 package com.zht.frame;
 
 
+import com.zht.frame.export.Factory;
+import com.zht.frame.export.FileFactory;
 import com.zht.frame.simplefctory.Api;
-import com.zht.frame.simplefctory.ImpA;
 import com.zht.frame.simplefctory.ImpB;
 import com.zht.frame.simplefctory.SimpleFactory;
 
@@ -27,6 +28,11 @@ public class ExampleUnitTest {
 
         api = SimpleFactory.creatProduct(ImpB.class);
         api.dobusiness();
+    }
+    @Test
+    public void testExport() {
+        Factory factory = new FileFactory();
+        factory.export("文件工厂打印文件");
     }
 
 }
