@@ -1,12 +1,10 @@
 package com.zht.frame;
 
 
-import com.zht.frame.build.Build;
-import com.zht.frame.build.Designer;
-import com.zht.frame.build.Room;
-import com.zht.frame.build.WorkBuilder;
 import com.zht.frame.export.Factory;
 import com.zht.frame.export.FileFactory;
+import com.zht.frame.nodebuild.Room;
+import com.zht.frame.nodebuild.WorkBuilder;
 import com.zht.frame.simplefctory.Api;
 import com.zht.frame.simplefctory.ImpB;
 import com.zht.frame.simplefctory.SimpleFactory;
@@ -40,11 +38,16 @@ public class ExampleUnitTest {
     }
     @Test
     public void testBuild() {
-        Build build = new WorkBuilder();
-        Designer designer = new Designer();
-        Room room  = designer.build(build);
-        System.out.println(room.getDoor());
-        System.out.println(room.getWindow());
+//        Build build = new WorkBuilder();
+//        Designer designer = new Designer();
+//        Room room  = designer.build(build);
+//        System.out.println(room.getDoor());
+//        System.out.println(room.getWindow());
+    }
+    @Test
+    public void testNodeBuild() {
+        Room  room  = new WorkBuilder().buildDoor("添加一个门").buildWindow("添加一个窗户").build();
+        room.toString();
     }
 
 }
