@@ -1,6 +1,10 @@
 package com.zht.frame;
 
 
+import com.zht.frame.build.Build;
+import com.zht.frame.build.Designer;
+import com.zht.frame.build.Room;
+import com.zht.frame.build.WorkBuilder;
 import com.zht.frame.export.Factory;
 import com.zht.frame.export.FileFactory;
 import com.zht.frame.simplefctory.Api;
@@ -33,6 +37,14 @@ public class ExampleUnitTest {
     public void testExport() {
         Factory factory = new FileFactory();
         factory.export("文件工厂打印文件");
+    }
+    @Test
+    public void testBuild() {
+        Build build = new WorkBuilder();
+        Designer designer = new Designer();
+        Room room  = designer.build(build);
+        System.out.println(room.getDoor());
+        System.out.println(room.getWindow());
     }
 
 }
