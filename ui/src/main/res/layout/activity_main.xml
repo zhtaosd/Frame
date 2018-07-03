@@ -1,18 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="#000"
+    android:orientation="vertical">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <!--<com.zht.ui.WaterFallFlowlayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <!--<TextView-->
+            <!--style="@style/text_flag_01"-->
+            <!--android:text="hello" />-->
+
+        <!--<TextView-->
+            <!--style="@style/text_flag_01"-->
+            <!--android:text="hello,hi" />-->
+
+        <!--<TextView-->
+            <!--style="@style/text_flag_01"-->
+            <!--android:text="你是我的"-->
+            <!--android:textSize="18sp" />-->
+
+        <!--<TextView-->
+            <!--style="@style/text_flag_01"-->
+            <!--android:text="hello,man" />-->
+
+        <!--<TextView-->
+            <!--style="@style/text_flag_01"-->
+            <!--android:text="helloview" />-->
+
+        <!--<TextView-->
+            <!--style="@style/text_flag_01"-->
+            <!--android:text="view" />-->
+
+        <!--<TextView-->
+            <!--style="@style/text_flag_01"-->
+            <!--android:text="我是你的"-->
+            <!--android:textSize="20sp" />-->
+
+        <!--<TextView-->
+            <!--style="@style/text_flag_01"-->
+            <!--android:text="he" />-->
+
+        <!--<TextView-->
+            <!--style="@style/text_flag_01"-->
+            <!--android:text="hello" />-->
+
+        <!--<TextView-->
+            <!--style="@style/text_flag_01"-->
+            <!--android:text="textview" />-->
+
+        <!--<TextView-->
+            <!--style="@style/text_flag_01"-->
+            <!--android:text="view" />-->
+
+        <!--<TextView-->
+            <!--style="@style/text_flag_01"-->
+            <!--android:text="hello,view" />-->
+
+        <!--<TextView-->
+            <!--style="@style/text_flag_01"-->
+            <!--android:text="hello,mt" />-->
+
+        <!--<TextView-->
+            <!--style="@style/text_flag_01"-->
+            <!--android:text="hel" />-->
+
+        <!--<TextView-->
+            <!--style="@style/text_flag_01"-->
+            <!--android:text="hel" />-->
+
+        <!--<TextView-->
+            <!--style="@style/text_flag_01"-->
+            <!--android:text="hel2" />-->
+
+    <!--</com.zht.ui.WaterFallFlowlayout>-->
+
+
+    <com.zht.ui.gradient.LinearGradientTextView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="30sp"
+        android:textColor="#666666"
+        android:text="欢迎同学们来到动脑学院高级UIadfsasfasdafsdfasdfadsf"/>
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>
