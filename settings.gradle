@@ -1,1 +1,1 @@
-include ':app', ':database', ':ui', ':bezier', ':pathmeasure', ':animation'
+include ':app', ':database', ':ui', ':bezier', ':pathmeasure', ':animation', ':animationframe'
